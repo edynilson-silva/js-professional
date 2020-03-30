@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example</title>
+</head>
+<body>
+    <p id="paragraph"></p>
+    
+    <script>
+        // Setting text in tag p
+        document.getElementById('paragraph').textContent = "Hello, World";
+
+        // Create tag html in JS
+        var element = document.createElement('p');
+        element.textContent = "New element";
+        document.body.appendChild(element);
+    </script>
+</body>
+</html>
